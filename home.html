@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Navbar Responsive</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="./imgs/logo.png" alt="" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#about-section">About Us</a></li>
+          <li><a href="#faq-section">Faq's</a></li>
+        </ul>
+      </nav>
+      <div class="hidden">holis</div>
+      <a class="btn" href="#"></a>
+
+      <a onclick="openNav()" class="menu" href="#">
+        <i class="fas fa-bars"></i
+      ></a>
+
+      <div id="mobile-menu" class="overlay">
+        <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="overlay-content">
+          <a onclick="closeNav()" href="#">Home</a>
+          <a onclick="closeNav()" href="#">About</a>
+          <a onclick="closeNav()" href="#faq-section">Faq's</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="home-section" class="home-section">
+      <div class="section-content">
+        <div class="section-left">
+          <h1>
+            Chicago's <span>Free</span> Medical Check-Up and Weight Loss
+            Consultation
+          </h1>
+          <p>
+            Limited spots available due to the Physicians schedule and the high
+            demand for service. No credit card or insurance required
+          </p>
+          <button>Book my appointment</button>
+        </div>
+        <div class="section-right">
+          <div class="offer">Your offer ends in:</div>
+          <div class="times">
+            <div class="counting">
+              <div>DAYS</div>
+              <div class="numbers">00</div>
+            </div>
+            <div class="counting">
+              <div>HOURS</div>
+              <div class="numbers">00</div>
+            </div>
+            <div class="counting">
+              <div>MINUTES</div>
+              <div class="numbers">00</div>
+            </div>
+            <div class="counting">
+              <div>SECONDS</div>
+              <div class="numbers">00</div>
+            </div>
+          </div>
+        </div>
+        <div class="yellow-rectangle">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-2"></div>
+      </div>
+    </section>
+
+    <section id="about-section" class="about-section">
+      <div class="about-boxes">
+        <div class="box-container">
+          <div class="business"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="about-numbers">10 <span>+</span></div>
+          <div class="about-text">year in business</div>
+        </div>
+        <div>
+          <div class="smile"><i class="fa-regular fa-face-smile"></i></div>
+          <div class="about-numbers">2000 <span>+</span></div>
+          <div class="about-text">positive reviews</div>
+        </div>
+        <div>
+          <div class="comment"><i class="fa-regular fa-comment"></i></div>
+          <div class="about-numbers">15.000 <span>+</span></div>
+          <div class="about-text">satisfied clients</div>
+        </div>
+        <div>
+          <div class="pulse"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div class="about-numbers">Many <span>+</span></div>
+          <div class="about-text">nurses and physicians assistans on staff</div>
+        </div>
+      </div>
+      <button>Book my appointment</button>
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+    </section>
+
+    <section class="information-section">
+      <div class="information-container">
+        <div class="information-left">
+          <div class="information-text">
+            <h2>Who Is The Consultation For?</h2>
+            <p>
+              Chicago's free medical check-up and weight loss consultation is
+              for Chicago residents who are looking to lose weight so they can
+              live a long, vibrant and healthy life, while looking good and not
+              breaking the bank.
+            </p>
+          </div>
+          <div class="information-text">
+            <h2>How Does It Work?</h2>
+            <p>
+              In this exam a certified nurse or physician will do various test
+              to check your overall health level and find which easy-to-do
+              physician-supervised weight loss program will work best for you.
+            </p>
+            <button>Book my appointment</button>
+          </div>
+        </div>
+        <div class="information-right">
+          <div class="information-circle"></div>
+          <img class="information-img" src="./imgs/information.png" alt="" />
+        </div>
+      </div>
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+    </section>
+
+    <section id="faq-section" class="faq-section">
+      <div class="faq-container">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+
+        <ul class="faq-list">
+          <div>
+            <li class="faq-item">
+              <div class="faq-question">
+                <div>Why is it free?</div>
+                <div><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+
+              <div class="faq-answer">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                </p>
+              </div>
+            </li>
+
+            <li class="faq-item">
+              <div class="faq-question">
+                <div>
+                  Do i need this if i've had my yearly medical check? What is
+                  the difference?
+                </div>
+                <div><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+
+              <div class="faq-answer">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                </p>
+              </div>
+            </li>
+
+            <li class="faq-item">
+              <div class="faq-question">
+                <div>Can i bring another person to the appointment?</div>
+                <div><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+
+              <div class="faq-answer">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                </p>
+              </div>
+            </li>
+
+            <li class="faq-item">
+              <div class="faq-question">
+                <div>
+                  What if i have to cancel or if i'm not sure i'll be able to
+                  make it?
+                </div>
+                <div><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+
+              <div class="faq-answer">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                </p>
+              </div>
+            </li>
+
+            <li class="faq-item">
+              <div class="faq-question">
+                <div>Do i need to bring anything with me?</div>
+                <div><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+
+              <div class="faq-answer">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                </p>
+              </div>
+            </li>
+
+            <li class="faq-item">
+              <div class="faq-question">
+                <div>What if i don't have insurance?</div>
+                <div><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+
+              <div class="faq-answer">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                </p>
+              </div>
+            </li>
+
+            <li class="faq-item">
+              <div class="faq-question">
+                <div>Do the weight loss programs you offer work?</div>
+                <div><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+
+              <div class="faq-answer">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                </p>
+              </div>
+            </li>
+
+            <li class="faq-item">
+              <div class="faq-question">
+                <div>What's the catch?</div>
+                <div><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+
+              <div class="faq-answer">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                </p>
+              </div>
+            </li>
+
+            <li class="faq-item">
+              <div class="faq-question">
+                <div>
+                  Will i have to exhaust myself in the gym to make it work?
+                </div>
+                <div><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+
+              <div class="faq-answer">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                </p>
+              </div>
+            </li>
+
+            <li class="faq-item">
+              <div class="faq-question">
+                <div>Where are you located?</div>
+                <div><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+
+              <div class="faq-answer">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+                </p>
+              </div>
+            </li>
+          </div>
+        </ul>
+        <button>Book my appointment</button>
+      </div>
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+    </section>
+  </body>
+  <script src="script.js" defer></script>
+</html>
