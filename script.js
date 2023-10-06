@@ -58,9 +58,14 @@ function updateCounter() {
   const targetDate = new Date()
   targetDate.setDate(targetDate.getDate() + 20)
 
-  const countdown = document.querySelectorAll(".counting .numbers")
+  const countdownFirst = document.querySelectorAll(
+    ".section-left .counting .numbers"
+  )
+  const countdownSecond = document.querySelectorAll(
+    ".section-right .counting .numbers"
+  )
 
-  function update() {
+  function update(countdown) {
     const { days, hours, minutes, seconds } =
       calculateTimeDifference(targetDate)
 
@@ -70,7 +75,10 @@ function updateCounter() {
     countdown[3].textContent = seconds.toString().padStart(2, "0")
   }
 
-  setInterval(update, 1000)
+  setInterval(() => {
+    update(countdownFirst)
+    update(countdownSecond)
+  }, 1000)
 }
 
 updateCounter()
