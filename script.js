@@ -1,7 +1,8 @@
 // HEADER FUNCTIONS
 
 function openNav() {
-  document.getElementById("mobile-menu").style.width = "100%"
+  event.preventDefault()
+  document.getElementById("mobile-menu").style.width = "40%"
 }
 
 function closeNav() {
@@ -33,7 +34,7 @@ function scrollToSectionWithDelay(event) {
   }
 }
 
-const navLinks = document.querySelectorAll(".nav-links a")
+const navLinks = document.querySelectorAll(".nav-links a, .mobile-links a")
 
 navLinks.forEach((link) => {
   link.addEventListener("click", scrollToSectionWithDelay)
@@ -99,10 +100,17 @@ faqQuestions.forEach((question) => {
   })
 })
 
-// Agregar un event listener al documento para cerrar el dropdown al hacer clic en cualquier lugar fuera de él
 document.addEventListener("click", (event) => {
   if (activeDropdown && !activeDropdown.parentElement.contains(event.target)) {
     activeDropdown.style.display = "none"
     activeDropdown = null
   }
+})
+
+// REDIRECTION FUNCTIONS
+
+const appointmentButton = document.getElementById("appointmentButton")
+
+appointmentButton.addEventListener("click", function () {
+  window.location.href = "404.html"
 })

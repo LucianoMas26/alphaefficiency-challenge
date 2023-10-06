@@ -73,35 +73,56 @@ button:hover {
   background: white;
   overflow: hidden;
   transition: width 0.3s ease;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .header .overlay .overlay-content {
   display: flex;
   height: 100%;
   flex-direction: column;
+  align-items: start;
+  padding: 7rem 2rem 0 1rem;
+}
+.mobile-links {
+  width: 100%;
+}
+.mobile-li {
+  list-style: none;
+}
+
+.overlay-menus {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+}
+.header .overlay .close {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  font-size: 30px;
+  width: 0;
 }
 
 .header .overlay a {
-  padding: 15px;
-  font-size: 36px;
+  padding: 15px 0;
+  font-size: 18px;
   display: block;
   transition: all 0.3s ease 0s;
-  font-weight: 700;
+  font-weight: 500;
   color: rgb(24, 22, 22);
+}
+
+.overlay-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #dd71c6;
+  font-size: 20px;
 }
 
 .header .overlay a:hover,
 .header .overlay a:focus {
   color: #dd71c6;
-}
-
-.header .overlay .close {
-  position: absolute;
-  top: 10px;
-  right: 35px;
-  font-size: 45px;
 }
 
 .header .logo {
@@ -690,6 +711,64 @@ footer {
   padding: 2rem 8rem;
 }
 
+/*ERROR 404 */
+
+.error-main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.error-title {
+  color: #888;
+  font-size: 12.5rem;
+  letter-spacing: 0.1em;
+  margin: 0.025em 0;
+  text-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+
+  @media (max-width: 480px) {
+    font-size: 8.5rem;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 5rem;
+  }
+
+  & > span {
+    animation: spooky 2s alternate infinite linear;
+    color: #dd71c6;
+    display: inline-block;
+  }
+}
+
+.error-main h2 {
+  color: #555;
+  margin-bottom: 0.4em;
+}
+
+.error-main p {
+  color: #555;
+  margin-top: 0;
+}
+
+.error-main button {
+  margin-top: 1rem;
+}
+
+@keyframes spooky {
+  from {
+    transform: translatey(0.15em) scaley(0.95);
+  }
+
+  to {
+    transform: translatey(-0.15em);
+  }
+}
+
 /* MEDIA QUERYS */
 @media screen and (max-width: 1065px) {
   .section-right {
@@ -911,6 +990,13 @@ footer {
 
   .faq-title {
     font-size: 22px;
+  }
+
+  .overlay-text {
+    display: none;
+  }
+  .overlay-menus {
+    justify-content: center;
   }
 }
 

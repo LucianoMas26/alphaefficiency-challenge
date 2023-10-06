@@ -18,11 +18,11 @@
           <li><a href="#home-section">Home</a></li>
           <li><a href="#about-section">About Us</a></li>
           <li><a href="#information-section">Programs</a></li>
-          <li><a href="#faq-section">Faq's</a></li>
+          <li><a href="#faq-section">Faq</a></li>
           <li><a href="#footer">Contact</a></li>
         </ul>
       </nav>
-      <div class="hidden">holis</div>
+      <div class="hidden"></div>
       <a class="btn" href="#"></a>
 
       <a onclick="openNav()" class="menu" href="#">
@@ -32,11 +32,61 @@
       <div id="mobile-menu" class="overlay">
         <a onclick="closeNav()" href="" class="close">&times;</a>
         <div class="overlay-content">
-          <a onclick="closeNav()" href="#home-section">Home</a>
-          <a onclick="closeNav()" href="#about-section">About Us</a>
-          <a onclick="closeNav()" href="#information-section">Programs</a>
-          <a onclick="closeNav()" href="#faq-section">Faq's</a>
-          <a onclick="closeNav()" href="#footer">Contact</a>
+          <ul class="mobile-links">
+            <li class="mobile-li">
+              <a onclick="closeNav()" href="#home-section">
+                <div class="overlay-menus">
+                  <div class="overlay-text">Home</div>
+                  <div class="overlay-icons">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mobile-li">
+              <a onclick="closeNav()" href="#about-section">
+                <div class="overlay-menus">
+                  <div class="overlay-text">About Us</div>
+                  <div class="overlay-icons">
+                    <i class="fa-sharp fa-solid fa-circle-info"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mobile-li">
+              <a onclick="closeNav()" href="#information-section">
+                <div class="overlay-menus">
+                  <div class="overlay-text">Programs</div>
+
+                  <div class="overlay-icons">
+                    <i class="fa-solid fa-rectangle-list"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mobile-li">
+              <a onclick="closeNav()" href="#faq-section">
+                <div class="overlay-menus">
+                  <div class="overlay-text">Faq</div>
+
+                  <div class="overlay-icons">
+                    <i class="fa-solid fa-comment"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mobile-li">
+              <a onclick="closeNav()" href="#footer">
+                <div class="overlay-menus">
+                  <div class="overlay-text">Contact</div>
+
+                  <div class="overlay-icons">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -73,7 +123,7 @@
             Limited spots available due to the Physicians schedule and the high
             demand for service. No credit card or insurance required
           </p>
-          <button>Book my appointment</button>
+          <button id="appointmentButton">Book my appointment</button>
         </div>
         <div class="section-right">
           <div class="offer">Your offer ends in:</div>
@@ -126,7 +176,7 @@
           <div class="about-text">nurses and physicians assistans on staff</div>
         </div>
       </div>
-      <button>Book my appointment</button>
+      <button id="appointmentButton">Book my appointment</button>
       <div class="circle-1"></div>
       <div class="circle-2"></div>
     </section>
@@ -150,7 +200,7 @@
               to check your overall health level and find which easy-to-do
               physician-supervised weight loss program will work best for you.
             </p>
-            <button>Book my appointment</button>
+            <button id="appointmentButton">Book my appointment</button>
           </div>
         </div>
         <div class="information-right">
@@ -308,7 +358,7 @@
             </li>
           </div>
         </ul>
-        <button>Book my appointment</button>
+        <button id="appointmentButton">Book my appointment</button>
       </div>
       <div class="circle-1"></div>
       <div class="circle-2"></div>
