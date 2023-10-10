@@ -265,19 +265,6 @@ button:hover {
   z-index: -2;
 }
 
-.circle {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  background-color: #ffd900;
-  border: 14px solid #ffffff;
-  opacity: 15%;
-  border-radius: 50%;
-  right: -5rem;
-  top: 40%;
-  transform: translateY(-50%);
-}
-
 .home-section .circle-2 {
   position: absolute;
   width: 250px;
@@ -376,16 +363,6 @@ button:hover {
   background-color: #c7a900;
 }
 
-.about-section .circle-1 {
-  width: 10rem;
-  height: 10rem;
-  top: 4rem;
-  right: -7rem;
-  border: 14px solid #ffffff;
-  opacity: 15%;
-  z-index: 1;
-}
-
 .about-section .circle-2 {
   width: 8rem;
   height: 8rem;
@@ -468,16 +445,6 @@ button:hover {
 
 .information-left button {
   margin-top: 2rem;
-}
-
-.information-section .circle-1 {
-  width: 20rem;
-  height: 20rem;
-  top: 8rem;
-  right: -12rem;
-  border: 20px solid #ffffff;
-  opacity: 15%;
-  z-index: 1;
 }
 
 .information-section .circle-3 {

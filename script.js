@@ -109,8 +109,10 @@ document.addEventListener("click", (event) => {
 
 // REDIRECTION FUNCTIONS
 
-const appointmentButton = document.getElementById("appointmentButton")
+const appointmentButton = document.querySelectorAll("#appointmentButton")
 
-appointmentButton.addEventListener("click", function () {
-  window.location.href = "404.html"
+appointmentButton.forEach(function button(button) {
+  button.addEventListener("click", function () {
+    window.location.href = "404.html"
+  })
 })
